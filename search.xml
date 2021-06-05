@@ -1,67 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search> 
-  
-  
-    
-    <entry>
-      <title>Github+Picgo搭建图床</title>
-      <link href="2021/06/04/Github+Picgo%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A/"/>
-      <url>2021/06/04/Github+Picgo%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1><a href="#github" class="header-anchor">#</a><span id="github">Github</span></h1><h2><a href="#zhu-ce-zhang-hu" class="header-anchor">#</a><span id="zhu-ce-zhang-hu">注册账户</span></h2><p>在<a href="https://github.com/">github</a>首页注册自己的github账户</p><h2><a href="#chuang-jian-cang-ku" class="header-anchor">#</a><span id="chuang-jian-cang-ku">创建仓库</span></h2><p>点击右上角的 “+”，选择 New repositories<br><img src="https://cdn.jsdelivr.net/gh/easn2233/hexopic/img/20210604223002.png"><br><img src="https://cdn.jsdelivr.net/gh/easn2233/hexopic/img/20210604221849.png"></p><h2><a href="#chuang-jian-token" class="header-anchor">#</a><span id="chuang-jian-token">创建token</span></h2><p>此时仓库已经建立，点击右上角头像，在点击setting进入设置；<br><img src="https://cdn.jsdelivr.net/gh/easn2233/hexopic/img/20210604223401.png"><br>在左侧页面最下找到 Developer settings，点击进入；<br><img src="https://cdn.jsdelivr.net/gh/easn2233/hexopic/img/20210604223456.png"><br>创建token<br><img src="https://cdn.jsdelivr.net/gh/easn2233/hexopic/img/20210604223620.png"><br>填写description（随心填），勾选复选框 repo ，接着到页面底部 Generate token 就完成了<br><img src="https://cdn.jsdelivr.net/gh/easn2233/hexopic/img/20210604223803.png"><br>然后复制生成一串字符 token，这个 token 只出现一次，所以要保存一下。<br><img src="https://cdn.jsdelivr.net/gh/easn2233/hexopic/img/20210604225159.png"></p><h1><a href="#picgo" class="header-anchor">#</a><span id="picgo">Picgo</span></h1><h2><a href="#xia-zai" class="header-anchor">#</a><span id="xia-zai">下载</span></h2><p>Picgo<a href="https://molunerfinn.com/PicGo/">官网地址</a></p><p>选择最新的releases并选择与自己系统的安装包</p><h2><a href="#pei-zhi" class="header-anchor">#</a><span id="pei-zhi">配置</span></h2><p>打开Picgo，选择图床设置，打开Github图床进行配置<br><img src="https://cdn.jsdelivr.net/gh/easn2233/hexopic/img/20210605095518.png"><br><img src="https://cdn.jsdelivr.net/gh/easn2233/hexopic/img/20210605100855.png"></p><ul><li>仓库名 即你的仓库名</li><li>分支名 默认 main</li><li>Token 就是刚刚复制的那一串字符</li><li>存储路径 这个可以填也可以不填，填了的话图片就上传到 git 中 img 这个文件夹</li><li>域名 <a href="https://raw.githubusercontent.com/easn2233/hexopic%E8%BF%99%E4%B8%AA%E8%A6%81%E6%94%B9%E4%B8%80%E4%B8%8B">https://raw.githubusercontent.com/easn2233/hexopic这个要改一下</a> 格式 <a href="https://raw.githubusercontent.com/[username]/[%E4%BB%93%E5%BA%93%E5%90%8D]">https://raw.githubusercontent.com/[username]/[仓库名]</a><br>然后点确定就可以了。</li></ul><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">这里提供一个加速访问图片的方法：CDN加速</span><br><span class="line">将上面的域名改为：</span><br><span class="line">原 https://raw.githubusercontent.com/easn2233/hexopic</span><br><span class="line">现 https://cdn.jsdelivr.net/gh/easn2233/hexopic</span><br></pre></td></tr></table></figure><p>现在就可以愉快的玩耍拉</p><p>本方案唯一缺点，不能私人。但是考虑到 GitHub 上传的图在列表里没法预览，应该没人会闲着没事翻记录。</p>]]></content>
-      
-      
+<search>
+  <entry>
+    <title>Aplayer教程</title>
+    <url>/2021/05/30/Aplayer%E6%95%99%E7%A8%8B/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><a href="https://github.com/MoePlayer/hexo-tag-aplayer/blob/master/docs/README-zh_cn.md">项目地址</a></p>
+<div class="note info modern"><p>感谢开源！！让我们用上了这么好的插件！</p>
+</div>
+
+<h1><a href="#chuang-jian-du-li-ye-mian" class="header-anchor">#</a><span id="chuang-jian-du-li-ye-mian">创建独立页面</span></h1><h2><a href="#ye-mian-chuang-jian" class="header-anchor">#</a><span id="ye-mian-chuang-jian">页面创建</span></h2><p>在终端输入</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo n page playlist</span><br></pre></td></tr></table></figure>
+
+<h2><a href="#xiu-gai-ye-mian" class="header-anchor">#</a><span id="xiu-gai-ye-mian">修改页面</span></h2><p>在博客目录/Hexo/source会出现一个playlist文件夹，修改其中的index.md文件。如下</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">title: 歌单</span><br><span class="line">date: 2019-02-21 16:14:00</span><br><span class="line">type: &quot;playlist&quot;`</span><br></pre></td></tr></table></figure>
+
+<h2><a href="#xiu-gai-zhu-ti-wen-jian" class="header-anchor">#</a><span id="xiu-gai-zhu-ti-wen-jian">修改主题文件</span></h2><p>打开主题的 _config.yml文件，在menu下新建一个名为playlist的类（注意这里使用的图标是图标库中的图标，网址为 <a href="https://links.jianshu.com/go?to=http://www.fontawesome.com.cn/faicons/">http://www.fontawesome.com.cn/faicons/</a> 。）</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">menu:</span><br><span class="line">  主页: / || fas fa-home</span><br><span class="line">  文章||far fa-file-alt:</span><br><span class="line">    标签: /tags/ || fas fa-tags</span><br><span class="line">    分类: /categories/ || fas fa-folder-open</span><br><span class="line">    时间轴: /archives/ || fas fa-archive</span><br><span class="line">    音乐: /playlist/ || fas fa-music</span><br><span class="line">  友链: /link/ || fas fa-link</span><br><span class="line">  关于: /about/ || fas fa-heart</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2><a href="#xiu-gai-ye-mian" class="header-anchor">#</a><span id="xiu-gai-ye-mian">修改页面</span></h2><p>打开/Hexo/source/playlist/index.md，添加如下内容：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">title: 音乐</span><br><span class="line">date: 2019-02-21 16:14:00</span><br><span class="line">type: &quot;playlist&quot;</span><br></pre></td></tr></table></figure>
+
+
+
+<h1><a href="#an-zhuang-amp-pei-zhi" class="header-anchor">#</a><span id="an-zhuang-amp-pei-zhi">安装&amp;配置</span></h1><h2><a href="#an-zhuang-cha-jian" class="header-anchor">#</a><span id="an-zhuang-cha-jian">安装插件</span></h2><p>hexo-tag-aplayer是Aplayer在Hexo上面的音乐插件。在终端执行以下内容：(参考<a href="https://github.com/MoePlayer/hexo-tag-aplayer/blob/master/docs/README-zh_cn.md">官方文档</a>)</p>
+   <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install --save hexo-tag-aplayer</span><br></pre></td></tr></table></figure>
+
+<h2><a href="#xiu-gai-pei-zhi-wen-jian" class="header-anchor">#</a><span id="xiu-gai-pei-zhi-wen-jian">修改配置文件</span></h2><p>最新版的 hexo-tag-aplayer 已经支持了MetingJS的使用，可以直接解析网络平台的歌曲如<mark class="hl-label green">QQ音乐</mark> 、<mark class="hl-label red">网易云音乐</mark> 、<mark class="hl-label orange">虾米</mark> 、<mark class="hl-label blue">酷狗</mark> 、<mark class="hl-label blue">百度</mark> 等平台，首先要在站点配置文件<code>_config.yml</code>中开启meting模式，添加以下代码在配置文件的最后：</p>
+   <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">aplayer:</span><br><span class="line">  meting: true</span><br></pre></td></tr></table></figure>
+
+<h2><a href="#she-zhi-ge-dan" class="header-anchor">#</a><span id="she-zhi-ge-dan">设置歌单</span></h2><p>配置歌单。例如复制歌单的链接，然后复制歌单的id，例如<code>https://music.163.com/#/playlist?id=395276323</code>这个歌单的id就是395276323，公司名可以是<code>netease</code>, <code>tencent</code>, <code>kugou</code>, <code>xiami</code>, <code>baidu</code>，下面给出一个例子，打开 /Hexo/source/playlist/<a href="https://links.jianshu.com/go?to=http://index.md">index.md</a>文件，输入：(其他详细配置参数请参照<a href="https://github.com/MoePlayer/hexo-tag-aplayer/blob/master/docs/README-zh_cn.md">Github项目</a>)</p>
+   <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% meting &quot;2653805335&quot; &quot;netease&quot; &quot;playlist&quot; &quot;theme:#FF4081&quot; &quot;mode:circulation&quot; &quot;mutex:true&quot; &quot;listmaxheight:340px&quot; &quot;preload:auto&quot; &quot;autoplay&quot; %&#125;</span><br></pre></td></tr></table></figure>
+
+<p>   效果如下图：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/easn2233/hexopic/img/20210601192652.png"></p>
+]]></content>
       <categories>
-          
-          <category> 免费白嫖一个图库嘻嘻 - Hexo </category>
-          
+        <category>Hexo</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> 教程 </tag>
-            
-            <tag> 图床 </tag>
-            
-            <tag> Github </tag>
-            
-            <tag> Picgo </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Aplayer教程</title>
-      <link href="2021/05/30/Aplayer%E6%95%99%E7%A8%8B/"/>
-      <url>2021/05/30/Aplayer%E6%95%99%E7%A8%8B/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><a href="https://github.com/MoePlayer/hexo-tag-aplayer/blob/master/docs/README-zh_cn.md">项目地址</a></p><div class="note info modern"><p>感谢开源！！让我们用上了这么好的插件！</p></div><h1><a href="#chuang-jian-du-li-ye-mian" class="header-anchor">#</a><span id="chuang-jian-du-li-ye-mian">创建独立页面</span></h1><h2><a href="#ye-mian-chuang-jian" class="header-anchor">#</a><span id="ye-mian-chuang-jian">页面创建</span></h2><p>在终端输入</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo n page playlist</span><br></pre></td></tr></table></figure><h2><a href="#xiu-gai-ye-mian" class="header-anchor">#</a><span id="xiu-gai-ye-mian">修改页面</span></h2><p>在博客目录/Hexo/source会出现一个playlist文件夹，修改其中的index.md文件。如下</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">title: 歌单</span><br><span class="line">date: 2019-02-21 16:14:00</span><br><span class="line">type: &quot;playlist&quot;`</span><br></pre></td></tr></table></figure><h2><a href="#xiu-gai-zhu-ti-wen-jian" class="header-anchor">#</a><span id="xiu-gai-zhu-ti-wen-jian">修改主题文件</span></h2><p>打开主题的 _config.yml文件，在menu下新建一个名为playlist的类（注意这里使用的图标是图标库中的图标，网址为 <a href="https://links.jianshu.com/go?to=http://www.fontawesome.com.cn/faicons/">http://www.fontawesome.com.cn/faicons/</a> 。）</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">menu:</span><br><span class="line">  主页: / || fas fa-home</span><br><span class="line">  文章||far fa-file-alt:</span><br><span class="line">    标签: /tags/ || fas fa-tags</span><br><span class="line">    分类: /categories/ || fas fa-folder-open</span><br><span class="line">    时间轴: /archives/ || fas fa-archive</span><br><span class="line">    音乐: /playlist/ || fas fa-music</span><br><span class="line">  友链: /link/ || fas fa-link</span><br><span class="line">  关于: /about/ || fas fa-heart</span><br><span class="line"></span><br></pre></td></tr></table></figure><h2><a href="#xiu-gai-ye-mian" class="header-anchor">#</a><span id="xiu-gai-ye-mian">修改页面</span></h2><p>打开/Hexo/source/playlist/index.md，添加如下内容：</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">title: 音乐</span><br><span class="line">date: 2019-02-21 16:14:00</span><br><span class="line">type: &quot;playlist&quot;</span><br></pre></td></tr></table></figure><h1><a href="#an-zhuang-amp-pei-zhi" class="header-anchor">#</a><span id="an-zhuang-amp-pei-zhi">安装&amp;配置</span></h1><h2><a href="#an-zhuang-cha-jian" class="header-anchor">#</a><span id="an-zhuang-cha-jian">安装插件</span></h2><p>hexo-tag-aplayer是Aplayer在Hexo上面的音乐插件。在终端执行以下内容：(参考<a href="https://github.com/MoePlayer/hexo-tag-aplayer/blob/master/docs/README-zh_cn.md">官方文档</a>)</p>   <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install --save hexo-tag-aplayer</span><br></pre></td></tr></table></figure><h2><a href="#xiu-gai-pei-zhi-wen-jian" class="header-anchor">#</a><span id="xiu-gai-pei-zhi-wen-jian">修改配置文件</span></h2><p>最新版的 hexo-tag-aplayer 已经支持了MetingJS的使用，可以直接解析网络平台的歌曲如<mark class="hl-label green">QQ音乐</mark> 、<mark class="hl-label red">网易云音乐</mark> 、<mark class="hl-label orange">虾米</mark> 、<mark class="hl-label blue">酷狗</mark> 、<mark class="hl-label blue">百度</mark> 等平台，首先要在站点配置文件<code>_config.yml</code>中开启meting模式，添加以下代码在配置文件的最后：</p>   <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">aplayer:</span><br><span class="line">  meting: true</span><br></pre></td></tr></table></figure><h2><a href="#she-zhi-ge-dan" class="header-anchor">#</a><span id="she-zhi-ge-dan">设置歌单</span></h2><p>配置歌单。例如复制歌单的链接，然后复制歌单的id，例如<code>https://music.163.com/#/playlist?id=395276323</code>这个歌单的id就是395276323，公司名可以是<code>netease</code>, <code>tencent</code>, <code>kugou</code>, <code>xiami</code>, <code>baidu</code>，下面给出一个例子，打开 /Hexo/source/playlist/<a href="https://links.jianshu.com/go?to=http://index.md">index.md</a>文件，输入：(其他详细配置参数请参照<a href="https://github.com/MoePlayer/hexo-tag-aplayer/blob/master/docs/README-zh_cn.md">Github项目</a>)</p>   <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% meting &quot;2653805335&quot; &quot;netease&quot; &quot;playlist&quot; &quot;theme:#FF4081&quot; &quot;mode:circulation&quot; &quot;mutex:true&quot; &quot;listmaxheight:340px&quot; &quot;preload:auto&quot; &quot;autoplay&quot; %&#125;</span><br></pre></td></tr></table></figure><p>   效果如下图：</p><p><img src="https://cdn.jsdelivr.net/gh/easn2233/hexopic/img/20210601192652.png"></p>]]></content>
-      
-      
+      <tags>
+        <tag>教程</tag>
+        <tag>Aplay</tag>
+        <tag>音乐</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Github+Picgo搭建图床</title>
+    <url>/2021/06/04/Github+Picgo%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1><a href="#github" class="header-anchor">#</a><span id="github">Github</span></h1><h2><a href="#zhu-ce-zhang-hu" class="header-anchor">#</a><span id="zhu-ce-zhang-hu">注册账户</span></h2><p>在<a href="https://github.com/">github</a>首页注册自己的github账户</p>
+<h2><a href="#chuang-jian-cang-ku" class="header-anchor">#</a><span id="chuang-jian-cang-ku">创建仓库</span></h2><p>点击右上角的 “+”，选择 New repositories<br><img src="https://cdn.jsdelivr.net/gh/easn2233/hexopic/img/20210604223002.png"><br><img src="https://cdn.jsdelivr.net/gh/easn2233/hexopic/img/20210604221849.png"></p>
+<h2><a href="#chuang-jian-token" class="header-anchor">#</a><span id="chuang-jian-token">创建token</span></h2><p>此时仓库已经建立，点击右上角头像，在点击setting进入设置；<br><img src="https://cdn.jsdelivr.net/gh/easn2233/hexopic/img/20210604223401.png"><br>在左侧页面最下找到 Developer settings，点击进入；<br><img src="https://cdn.jsdelivr.net/gh/easn2233/hexopic/img/20210604223456.png"><br>创建token<br><img src="https://cdn.jsdelivr.net/gh/easn2233/hexopic/img/20210604223620.png"><br>填写description（随心填），勾选复选框 repo ，接着到页面底部 Generate token 就完成了<br><img src="https://cdn.jsdelivr.net/gh/easn2233/hexopic/img/20210604223803.png"><br>然后复制生成一串字符 token，这个 token 只出现一次，所以要保存一下。<br><img src="https://cdn.jsdelivr.net/gh/easn2233/hexopic/img/20210604225159.png"></p>
+<h1><a href="#picgo" class="header-anchor">#</a><span id="picgo">Picgo</span></h1><h2><a href="#xia-zai" class="header-anchor">#</a><span id="xia-zai">下载</span></h2><p>Picgo<a href="https://molunerfinn.com/PicGo/">官网地址</a></p>
+<p>选择最新的releases并选择与自己系统的安装包</p>
+<h2><a href="#pei-zhi" class="header-anchor">#</a><span id="pei-zhi">配置</span></h2><p>打开Picgo，选择图床设置，打开Github图床进行配置<br><img src="https://cdn.jsdelivr.net/gh/easn2233/hexopic/img/20210605095518.png"><br><img src="https://cdn.jsdelivr.net/gh/easn2233/hexopic/img/20210605100855.png"></p>
+<ul>
+<li>仓库名 即你的仓库名</li>
+<li>分支名 默认 main</li>
+<li>Token 就是刚刚复制的那一串字符</li>
+<li>存储路径 这个可以填也可以不填，填了的话图片就上传到 git 中 img 这个文件夹</li>
+<li>域名 <a href="https://raw.githubusercontent.com/easn2233/hexopic%E8%BF%99%E4%B8%AA%E8%A6%81%E6%94%B9%E4%B8%80%E4%B8%8B">https://raw.githubusercontent.com/easn2233/hexopic这个要改一下</a> 格式 <a href="https://raw.githubusercontent.com/[username]/[%E4%BB%93%E5%BA%93%E5%90%8D]">https://raw.githubusercontent.com/[username]/[仓库名]</a><br>然后点确定就可以了。</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">这里提供一个加速访问图片的方法：CDN加速</span><br><span class="line">将上面的域名改为：</span><br><span class="line">原 https://raw.githubusercontent.com/easn2233/hexopic</span><br><span class="line">现 https://cdn.jsdelivr.net/gh/easn2233/hexopic</span><br></pre></td></tr></table></figure>
+<p>现在就可以愉快的玩耍拉</p>
+<p>本方案唯一缺点，不能私人。但是考虑到 GitHub 上传的图在列表里没法预览，应该没人会闲着没事翻记录。</p>
+]]></content>
       <categories>
-          
-          <category> Hexo </category>
-          
+        <category>免费白嫖一个图库嘻嘻 - Hexo</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> 教程 </tag>
-            
-            <tag> Aplay </tag>
-            
-            <tag> 音乐 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-  
-  
+      <tags>
+        <tag>教程</tag>
+        <tag>图床</tag>
+        <tag>Github</tag>
+        <tag>Picgo</tag>
+      </tags>
+  </entry>
 </search>
